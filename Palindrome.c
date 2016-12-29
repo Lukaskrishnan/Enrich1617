@@ -1,17 +1,16 @@
 # Enrich1617
-include<stdio.h>
+#include<stdio.h>
 main()
 {
-	int num,flag=0,temp,count=0;
-	printf("\nenter the number to be checked\n");
+	int num,t,n=0;
 	scanf("%d",&num);
-	temp=num;
-	while(temp!=0)
+	t=num;
+	while(t!=0)
 	{
-		count=count*10+temp%10;
-		temp=temp/10;
+		n=n*10+t%10;
+		t=t/10;
 	}
-	if(count==num)
+	if(n==num)
 		printf("YES");
 	else
 		printf("NO");
