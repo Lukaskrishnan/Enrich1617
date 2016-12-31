@@ -23,7 +23,10 @@ main()
 			if(count%2!=0)
 				odd++;
 			if(odd>=2)
+			{	
 				flag=1;
+				break;
+			}
 			m++;
 
 	}
