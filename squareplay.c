@@ -1,5 +1,6 @@
 # Enrich1617
 #include <stdio.h>
+#include<conio.h>
 
 int main()
 {
@@ -52,5 +53,6 @@ do
 			c++;
 		}break;
 	}
+	clrscr();
 }while(choice!='Q');
 }
