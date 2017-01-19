@@ -4,7 +4,7 @@
 
 int main()
 {
-int a[4][4],num=1,r=3,c=3,temp;
+int a[4][4],num=1,r=3,c=3,temp,i,j;
 char choice;
 while(num<16)
 {
