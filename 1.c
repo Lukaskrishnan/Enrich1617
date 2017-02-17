@@ -1,10 +1,11 @@
-# Enrich1617
 #include <stdio.h>
 #include<string.h>
-char sort(char **s)
+void sort(char *s,char *s1)
 {
 	char temp[10];
-	strcpy()
+	strcpy(temp,s);
+	strcpy(s,s1);
+	strcpy(s1,temp);
 }
 int main()
 {
@@ -20,13 +21,21 @@ int main()
 	{
 		for(int j=0;j<n;j++)
 		{
+			if(strlen(s[i])<strlen(s[j]))
+			{
+				sort(s[i],s[j]);
+			}
 			if(strlen(s[i])==strlen(s[j]))
 				{
 					if(s[i]<s[j])
 					{
-						sort(s);
+						sort(s[i],s[j]);
 					}
 				}
 		}
+	}
+	for(int i=0;i<n;i++)
+	{
+		printf("%s ",s[i]);
 	}
 }
